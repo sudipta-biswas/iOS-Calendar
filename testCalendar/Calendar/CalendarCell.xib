@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="calendarItemIdentifier" id="sWl-sz-Q6V" customClass="CalendarCell" customModule="testCalendar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="1VQ-p0-Xzu">
+                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBZ-U1-lOo">
+                        <rect key="frame" x="10" y="0.0" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Ero-N4-TGW"/>
+                            <constraint firstAttribute="width" constant="40" id="dLx-bD-kCS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9e-fg-Z3z">
+                        <rect key="frame" x="25" y="45" width="10" height="10"/>
+                        <color key="backgroundColor" red="0.4600064767" green="0.1054070483" blue="0.11859467830000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="10" id="6d2-Qg-HZf"/>
+                            <constraint firstAttribute="height" constant="10" id="7E5-k5-tTF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EBZ-U1-lOo" firstAttribute="top" secondItem="1VQ-p0-Xzu" secondAttribute="top" id="D1U-7G-XIy"/>
+                    <constraint firstItem="EBZ-U1-lOo" firstAttribute="centerX" secondItem="1VQ-p0-Xzu" secondAttribute="centerX" id="JdT-U7-Kqc"/>
+                    <constraint firstItem="x9e-fg-Z3z" firstAttribute="centerX" secondItem="1VQ-p0-Xzu" secondAttribute="centerX" id="aNy-ki-rGD"/>
+                    <constraint firstItem="x9e-fg-Z3z" firstAttribute="top" secondItem="EBZ-U1-lOo" secondAttribute="bottom" constant="5" id="s8h-yt-vOh"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="60" height="91"/>
+            <connections>
+                <outlet property="day" destination="EBZ-U1-lOo" id="oWy-ig-1oU"/>
+                <outlet property="lblAppointment" destination="x9e-fg-Z3z" id="zei-U1-Mxf"/>
+            </connections>
+            <point key="canvasLocation" x="-156.52173913043478" y="23.772321428571427"/>
+        </collectionViewCell>
+    </objects>
+</document>
